@@ -64,16 +64,16 @@
       </footer>
 <script>
     window.alert('NYALAIN MUSIKNYA YAA')
-    function gamau(id){
-        var mau = document.getElementById('mau');
-        var i = Math.floor(Math.random()*300)+1;
-        var j = Math.floor(Math.random()*100)+mau.offsetTop;
+    const gamau =(id) => {
+        let mau = document.getElementById('mau');
+        let i = Math.floor(Math.random()*300)+1;
+        let j = Math.floor(Math.random()*100)+mau.offsetTop;
         id.style.left = i+ 'px';
         id.style.top = j+ 'px';
     }
-    var Audio = false;
-    function musik() {
-    var audio = document.getElementById('bgMusik');
+    let Audio = false;
+    const musik = () => {
+    let audio = document.getElementById('bgMusik');
     if(!Audio) audio.play();
     else audio.pause();
     Audio = !Audio;
